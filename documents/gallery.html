@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EC's bästa barber-shop">
+    <title>Gallery - X-klipp</title>
+    <link rel="icon" href="../media/img/logga1mini.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleGallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/e1f221772d.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/49132327d5.css">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="desktop-header-logo-container">
+            <img class="desktop-header-logo-img" src="../media/img/x-klipp.png" alt="xyz-klipp-logo" width="200">
+            <h1 class="desktop-header-logo-text">X-Cut</h1>
+    </a>
+    <a href="#" class="mobile-header-logo-container">
+            <img class="mobile-header-logo-img" src="../media/img/x-klipp.png" alt="xyz-klipp-logo" width="200">
+            <h1 class="mobile-header-logo-text">X-Cut</h1>
+    </a>
+    <nav class="desktop-header-linkwrapper">
+        <a href="../index.html">Home</a>
+        <a href="../documents/about.html">About</a>
+        <a href="../documents/booking.html">Book now</a>
+        <a href="#">Gallery</a>
+    </nav>
+    <div class="mobile-menu-button">
+        <div class="mobile-menu-button-burger"></div>
+    </div>
+</header>
+<div class="mobile-menu">
+    <nav class="mobile-header-linkwrapper">
+        <a class="mobile-header-link" href="../index.html">Home</a>
+        <a class="mobile-header-link" href="../documents/about.html">About</a>
+        <a class="mobile-header-link" href="../documents/booking.html">Book now</a>
+        <a class="mobile-header-link" href="#">Gallery</a>
+    </nav>
+</div>
+
+
+
+
+<section id="gallery-section">
+    <div id="gallery-image-container">
+        <main id="gallery-image-wrapper"></main> 
+    </div>
+    <div id="gallery-lightbox-wrapper">
+        <div id="gallery-preserve-width">
+            <div class="gallery-close-wrapper">
+                <i class="fa fa-times-circle" onclick="closeLightbox()"></i>
+                <!--<span onclick="closeLightbox()">X</span>-->
+            </div>
+            <div id="gallery-main-image-wrapper">
+                <img id="gallery-main-image" src="" alt=""><!--src sätts i JavaScript-->
+                <span id="gallery-main-image-text" alt=""></span>
+                <i id="gallery-prev-button" class="fa fa-arrow-circle-left" onclick="prevImg()"></i>
+                <i id="gallery-next-button" class="fa fa-arrow-circle-right" onclick="nextImg()"></i>
+            </div>
+            <div id="gallery-thumbnails-wrapper"></div>
+        </div>
+    </div>
+ </section>
+
+
+
+
+     <footer>
+      <section id="Social-section">
+      <div class="social-icons-wrapper">
+          <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fa fa-facebook"></i></a>
+          <a href="https://github.com" target="_blank"><i class="fa fa-instagram"></i></a>
+      </div>
+      <div class="social-other">
+          <a id="contact-mail" href="mailto:generic@gmail.com">E-mail</a>
+          <a id="tel" href="tel:0123456789">Call us</a>    
+      </div>
+      <div>
+          <p id="copyright"> © 2021 Grupp 8 inc. All rights reserved.</p>
+      </div>
+  </section>
+  </footer>
+  <script src="../app.js"></script>
+  <script src="../gallery.js"></script>
+</body>
+</html>
