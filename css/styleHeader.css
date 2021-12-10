@@ -1,3 +1,7 @@
+
+/***************************************                       ***************************************/
+/***************************************         HEADER        ***************************************/
+/***************************************                       ***************************************/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -18,7 +22,12 @@ font-family: Arial, Helvetica, sans-serif;
 
 
 
-/***************************************   HEADER   ***************************************/
+
+/*<<<<<<<<<<<<<< HEADER >>>>>>>>>>>>>>*/
+
+
+
+
 .header{
     display: flex;
     width: 100%;
@@ -33,7 +42,6 @@ font-family: Arial, Helvetica, sans-serif;
     border-bottom: 2px solid black;
     z-index: 1999;
 }
-
 .desktop-header-logo-container,
 .mobile-header-logo-container{
     display: flex;
@@ -101,7 +109,7 @@ font-family: Arial, Helvetica, sans-serif;
     display: flex;
 }
 
-/*-------------------------------- media */
+/*------------- Media - Header */
 
 @media (min-width: 800px){
     .mobile-header-logo-container,
@@ -110,7 +118,6 @@ font-family: Arial, Helvetica, sans-serif;
         display: none;
     }
 }
-
 @media (max-width: 800px){ 
     .desktop-header-logo-container,
     .desktop-header-linkwrapper{
@@ -223,113 +230,3 @@ font-family: Arial, Helvetica, sans-serif;
         background-color: rgb(129, 129, 129);
     }
 }
-
-
-
-
-
-
-
-
-
-/***************************************   HOME   ***************************************/
-
-
-
-/***************************************   FOOTER   ***************************************/
-footer {
-    box-shadow: 0px 5px 8px 0px #f2f2f2;
-    background-color: rgb(46, 46, 46);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: auto;
-    animation-name: fadeIn;
-    animation-duration: 1s;
-  }
-  @keyframes fadeIn {
-      0% {
-          opacity:0;
-      }
-  
-      100% {
-          opacity:100;
-      }
-  }
-
-  #Social-section{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-      
-
-  
-  #Social-section a {
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-  }
-  
-  
-  .social-icons-wrapper {
-    margin-top: 10px;
-    font-size: 30px;
-   
-  }
-  
-  .social-icons-wrapper p {
-      font-size: 15px;
-      font-family: sans-serif;
-  }
-  
-  .social-other {
-      margin-top: 20px;
-      font-size: 13px;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-
-  }
-  .social-other a{
-      color: white;
-  }
-
-  .social-other a:hover{
-    color: red;
-    transition: 0.5s;
-  }
-  .social-icons-wrapper a :hover{
-      color: red;
-      animation-name: pulse;
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
-  }
-  
-  @keyframes pulse {
-  
-      0% {
-          transform: scale(1);
-      }
-     
-      50% {
-          transform: scale(1.3);
-      }
-  
-      100% {
-          transform: scale(1)
-      }
-  }
-  
-  #copyright {
-      font-size: 10px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      color: white;
-  }
-  
-  #Tel {
-      margin-top: 10px;
-  }
